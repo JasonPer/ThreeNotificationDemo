@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通通知"
+        android:id="@+id/btn_norNotification"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="折叠通知"
+        android:id="@+id/btn_foldNotification"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="悬挂通知"
+        android:id="@+id/btn_hungNotification"/>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_pub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="public"/>
+        <RadioButton
+            android:id="@+id/rb_pri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="private"/>
+        <RadioButton
+            android:id="@+id/rb_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="secret"/>
+    </RadioGroup>
+
+</LinearLayout>
